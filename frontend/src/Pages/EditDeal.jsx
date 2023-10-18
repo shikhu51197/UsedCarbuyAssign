@@ -5,6 +5,7 @@ import {
   FormLabel,
   HStack,
   Heading,
+  Image,
   Input,
   useToast,
 } from "@chakra-ui/react";
@@ -12,7 +13,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { editMyDealFun } from "../Redux/marketplaceReducer/action";
-
+import logo3 from "../assest/arrow.png";
 const EditDeal = () => {
   const toast = useToast();
   const { editID } = useParams();
@@ -68,7 +69,11 @@ const EditDeal = () => {
           color: "brown",
         }}
       >
-        <Heading>Edit Your Deal</Heading>
+<Box width="100%" display="flex" >
+          <Image src={logo3} borderRadius={10} width="20%" />
+          <Heading>Edit Your Deal</Heading>
+        </Box>
+        
 
         <HStack style={{ width: "100%" }}>
           <br />

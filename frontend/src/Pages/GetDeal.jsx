@@ -22,6 +22,7 @@ import {
 } from "@chakra-ui/react";
 import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
+import logo from "../assest/sammy.gif";
 
 const GetDeal = () => {
   const dispatch = useDispatch();
@@ -72,8 +73,12 @@ const GetDeal = () => {
 
   return (
     <DarkMode>
-      <Box style={{ paddingTop: "100px" }}>
+      <Box style={{ paddingTop: "100px" }} h="100vh">
         <HStack margin="20px" marginLeft="70%" gap="40px">
+        <Box width="50%">
+          <Image src={logo} borderRadius={10} width="100%" />
+        </Box>
+
           <Link to="/adddeal">
             <Button colorScheme="yellow" size="md">
               Add New Deal
@@ -86,7 +91,7 @@ const GetDeal = () => {
           </Link>
         </HStack>
 
-        <TableContainer>
+        <TableContainer >
           <Table variant="simple" size="sm">
             <Thead>
               <Tr>
@@ -97,7 +102,8 @@ const GetDeal = () => {
                 <Th>Remove Product</Th>
               </Tr>
             </Thead>
-            <Tbody>
+            <Tbody overflow=
+            'auto'>
               {myData?.map((el, i) => (
                 <Tr key={i + 1}>
                   <Td>{i + 1}.</Td>

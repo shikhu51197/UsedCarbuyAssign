@@ -1,3 +1,6 @@
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { NavLink, useParams } from "react-router-dom";
 import {
   Box,
   Button,
@@ -9,49 +12,49 @@ import {
   SimpleGrid,
   Stack,
   Text,
+  useColorModeValue,
 } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { NavLink, useParams } from "react-router-dom";
 
 const SingleDeal = () => {
   const { id } = useParams();
   const [data, setData] = useState();
-  const color1 = "#d1b080";
-  const color2 = "gray.900";
-  const color3 = "white";
 
   const { marketData } = useSelector((store) => store.marketplaceReducer);
 
-  console.log(data);
+  const color1 = useColorModeValue("brand.light", "brand.dark");
+  const color2 = useColorModeValue("gray.900", "white");
+  const color3 = useColorModeValue("white", "gray.900");
 
   useEffect(() => {
     let data = marketData.filter((el) => {
       return el._id == id;
     });
     setData(data[0]);
-  }, []);
+  }, [id, marketData]);
+
   return (
     <Container maxW={"6xl"}>
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 24 }}
+
+
       >
         <Flex>
           <Image
             rounded={"md"}
+            borderRadius="200px"
             alt={"product image"}
             src={data?.imageURL}
-            // fit={"cover"}
             align={"center"}
             w={"100%"}
             h={{ base: "100%", sm: "400px", lg: "450px" }}
           />
         </Flex>
-        <Stack spacing={{ base: 6, md: 10 }}>
+        <Stack spacing={{ base: 6, md: 10 }} bg="pink.500" borderRadius="30px" p="30px">
           <Box as={"header"}>
-            <Heading
+          <Heading
               lineHeight={1.1}
               fontWeight={500}
               fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}

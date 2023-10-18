@@ -104,12 +104,12 @@ const Home = () => {
         <Input
           type="text"
           onChange={(e) => handleSearch(e.target.value)}
-          placeholder="Search Car"
+          placeholder="Search Car🚗"
         />
       </Box>
     </Box>
       <Button marginBottom={"30px"} colorScheme ='facebook' >
-        Reset All Filters
+        Reset All Filters📝
       </Button>
 
       {isLoading === true ? (
@@ -173,9 +173,9 @@ const Home = () => {
                   <Text marginLeft={"20px"}>Year : {el.year}</Text>
                   <Text marginLeft={"20px"}>Mileage : {el.mileage} Km/L</Text>
                   <Text marginLeft={"20px"}>Price : ₹ {el.price} /-</Text>
-                  <Button colorScheme='yellow' marginLeft={"150px"} marginTop={"10px"}>
+                  <Button colorScheme='yellow' w='50%' marginLeft={"150px"} marginTop={"10px"}>
                     {" "}
-                    <Link to={`/deal/${el?._id}`}>Load More</Link>
+                    <Link to={`/deal/${el?._id}`}>Load More⬇️</Link>
                   </Button>
                 </Box>
               );

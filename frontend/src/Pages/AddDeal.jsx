@@ -5,6 +5,7 @@ import {
   FormLabel,
   HStack,
   Heading,
+  Image,
   Input,
   useDisclosure,
   useToast,
@@ -14,6 +15,7 @@ import { useDispatch } from "react-redux";
 import { addDealFun } from "../Redux/marketplaceReducer/action";
 import { Link } from "react-router-dom";
 import OemModal from "./OemModal";
+import logo2 from "../assest/polar.gif";
 
 const initialState = {
   title: "",
@@ -92,7 +94,11 @@ const AddDeal = () => {
             gap: "100px",
           }}
         >
-          <Heading>Add New Deal</Heading>
+
+<Box width="100%" display="flex">
+          <Image src={logo2} borderRadius={10} width="20%" />
+         <Heading>Add New Deal</Heading>
+         </Box>
 
           <OemModal />
         </HStack>

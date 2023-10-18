@@ -65,7 +65,7 @@ const Navbar = () => {
       <Flex justifyContent={"space-around"} width={"50%"} spacing={10} mt='10px'>
         <Link to="/getdeal">
           <Button colorScheme="pink" size="md">
-            Dealer Section
+            Dealers Page
           </Button>
         </Link>
         <Link to="/signup">
