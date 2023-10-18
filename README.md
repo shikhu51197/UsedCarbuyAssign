@@ -7,9 +7,9 @@ Second-Hand Cars 🧑‍💻 :-
 
 ![anime](https://github.com/shikhu51197/skillbackend/assets/107506646/fe3f5ea7-70ca-4ece-9cc0-8972b96c6a03)
 
-[![Backend Deploy to Vercel](https://img.shields.io/badge/Backend_Deployed_Vercel_Link-0A66C2?style=for-the-badge&logo=ko-fi&logoColor=white)](https://skillbackend.vercel.app/
+[![Backend Deploy to Vercel](https://img.shields.io/badge/Backend_Deployed_Vercel_Link-0A66C2?style=for-the-badge&logo=ko-fi&logoColor=white)](https://carback-xs8y.onrender.com/
 )
-[![Deployed App Vercel Link](https://img.shields.io/badge/Deployed_App_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://skillbackend-lovs.vercel.app/)
+[![Deployed App  Link](https://img.shields.io/badge/Deployed_App__Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://653034eaf769b253f0d37575--delicate-granita-858add.netlify.app/)
 
 
 
@@ -47,7 +47,7 @@ Second-Hand Cars 🧑‍💻 :-
    
 
 - #### For live Project: -
-   - `Vercel`
+   - `Netlify`
    
 
 ## ⭕Steps to run our project:
