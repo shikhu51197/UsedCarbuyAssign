@@ -1,0 +1,45 @@
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+    padding: 60px 0;
+    background: #fff;
+    font-family: "Arvo", serif;
+  }
+  
+  .page_404 img {
+    width: 100%;
+  }
+  
+  .four_zero_four_bg {
+    background-image: url(https://4.bp.blogspot.com/-yf4ejzSYnYw/UTdplBJiiLI/AAAAAAAAAE0/lDExvjERfFw/s1600/mmmmmmm+donut.+100+oc+animated+gif+i+made+for+my_4a2d7d_3944935.gif);
+    height: 540px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .four_zero_four_bg h1 {
+    font-size: 80px;
+  }
+  
+  .four_zero_four_bg h3 {
+    font-size: 80px;
+  }
+  
+  .link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #010b00;
+    margin: 20px 0;
+    font-size: larger;
+    font-weight: 200;
+    display: inline-block;
+  }
+  .contant_box_404 {
+    margin-top: -100px;
+  }
+  
+  h3, p {
+      font-size: larger;
+  }
