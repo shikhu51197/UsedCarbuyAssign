@@ -3,9 +3,8 @@ Second-Hand Cars 🧑‍💻 :-
 <br>
 
 ---
+![car](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/8f9bea78-b5a6-49b4-b5b8-0f99ae987ea0)
 
-
-![anime](https://github.com/shikhu51197/skillbackend/assets/107506646/fe3f5ea7-70ca-4ece-9cc0-8972b96c6a03)
 
 [![Backend Deploy to Vercel](https://img.shields.io/badge/Backend_Deployed_Vercel_Link-0A66C2?style=for-the-badge&logo=ko-fi&logoColor=white)](https://carback-xs8y.onrender.com/
 )
@@ -66,6 +65,8 @@ Second-Hand Cars 🧑‍💻 :-
 ---
 ✨Project Overview:
 
+![admin](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/af53f892-2426-4b64-bfba-a2fa8ab4ec6a)
+
 UsedCars is a marketplace for second-hand cars. Dealers list their inventory of second-hand cars on buycars.com. Buyers can look at the stock and buy the vehicle from buycars.com.
 This Application lets you register and Login and post, list, update, and delete secondhand cars.
 
@@ -73,7 +74,7 @@ This Application lets you register and Login and post, list, update, and delete 
 
 ✨Initialize the Application: To begin using the application, navigate to the frontend terminal and execute the command npm start. This will start the application locally, making it accessible through your web browser at port 3000.
 
-✨Home Page: Upon launching the application, users are greeted with the home page, offering essential options for interaction, and building that main image by themselves using 3d crystal illustrations and icons.
+✨Home Page: Upon launching the application, users are greeted with the home page, offering essential options for interaction, load more data of car
 
 ---✨User Journey:
 
@@ -83,15 +84,13 @@ This Application lets you register and Login and post, list, update, and delete 
 
 ✨Login: After successfully signing up, users are redirected to the login page to authenticate themselves.
 
-✨Add Mentor Profile: Following a successful login, users are taken to the "Add Mentor" page. Here, users have the opportunity to add themselves as mentors to the platform, enhancing its mentorship network.
+✨Add Car : Following a successful login, users are taken to the "Add Car" page. 
 
-✨Mentor List: Once the mentor profile setup is complete, users are directed to the "Mentor" page. This page lists all available mentors, allowing users to browse through their profiles.
+✨OEM List: Once the Cars profile setup is complete, users are directed to the "Car" page. This page lists all available cars, allowing users to browse through their profiles.
 
-✨View Mentor Profile: Users can select a mentor from the list and click on "View Mentor" to access a detailed mentor profile.
+✨View car Profile: Users can select a mentor from the list and click on "Load More" to access a detailed car profile.
 
-✨Book a Mentor: Within the mentor's profile, users can select a date and initiate the booking process. This feature streamlines the appointment scheduling process, making it convenient for users to secure mentorship sessions.
-
-✨Confirmation and Return: Upon successfully booking a mentor, users are redirected to the home page, where they can explore further options. A logout feature is also accessible, ensuring user security.
+✨Edit and delete car data from dealers' page .
 
 
 
@@ -99,22 +98,22 @@ This Application lets you register and Login and post, list, update, and delete 
 ## Features ✨:-
 ---
  | Serial No            | Feature                                                              |
-| ----------------- | ------------------------------------------------------------------ |
-| 1 | User signup and Login and logout |
-| 2 | Home Page, Mentor page |
-| 3 |Add Mentor Page, Mentor Profile page |
+| ----------------- | ------------------------------------------------------------ |
+| 1 | User signup login, and logout |
+| 2 | Home Page, Dealer page, Edit Car |
+| 3 |Add car Page, Car Profile page |
 | 4 | navbar, footer, completely Responsive |
-| 6 | light and dark mode |
+| 6 | light and dark mode, OEM Page |
 
 ---
 # Package.json(Dependency)✨:-
 
  | Serial No            | Backend                      |  Frontend      |
-| ----------------- | -------------------|------------------------ |
+| ----------------- | ---------------------|------------------------ |
 | 1 | bcrypt |   Chakra-ui |
 | 2 | mongoose |  React Router dom |
-| 3 | cors |    redux ,react-icons |
-| 4 | dotenv |  react redux ,axios |
+| 3 | cors | redux, react-icons |
+| 4 | dotenv |  react redux, axios |
 | 5 | express | chakraUi-icons |
 | 6 | jsonwebtoken | redux thunk |
 
@@ -129,29 +128,36 @@ graph TD;
     HomePage-->SignUpPage;
      HomePage-->LoginPage;
       SignUpPage-->loginPage;
-       loginPage-->AddMentorPage;
-     AddMentorPage --> MentorPage;
-       MentorPage-->MentorProfilePage;
-       MentorProfilePage-->HomePage
- PrivateRoute-->AddMentorPage-->MentorPage-->MentorProfilePage
+       loginPage-->DealerPage;
+    DealerPage--> AddCarPage;
+       EditCarPage-->OEMPage;
+       DetailCarPage-->HomePage
+ PrivateRoute-->DealerPage-->AddCarPage-->OEMPage-->EditCarPage
      
 ```
-## ✨ Snapshot
-![Screenshot (1765)](https://github.com/shikhu51197/skillbackend/assets/107506646/1fffa81b-49b2-4cff-8e12-0d87ece2e13b)
-<br>
+## ✨ Snaps
+![Screenshot (1775)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/514d1bfd-e05e-4d01-b50a-fb64ad9beee7)
 
-![Screenshot (1768)](https://github.com/shikhu51197/skillbackend/assets/107506646/c1ddc413-2128-40fa-9760-0c7b48b24adf)
-<br>
+![Screenshot (1776)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/24d805e9-b568-44dd-8be3-3240c55fbbf0)
 
-![Screenshot (1767)](https://github.com/shikhu51197/skillbackend/assets/107506646/b8b01d50-3fd9-41c6-b373-0e852713482b)
-<br>
+![Screenshot (1777)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/82aa3a58-0290-4bfa-b786-335ea117da14)
 
-![Screenshot (1769)](https://github.com/shikhu51197/skillbackend/assets/107506646/bbf07071-2528-4ca4-a8c0-18bc58446fc2)
-<br>
-![Screenshot (1770)](https://github.com/shikhu51197/skillbackend/assets/107506646/712ac9e4-da0d-4024-8427-2ab4d669fc74)
-<br>
-![Screenshot (1771)](https://github.com/shikhu51197/skillbackend/assets/107506646/b5ce23b8-b1af-4dee-af02-ebd9bcca87ec)
-<br>
+![Screenshot (1778)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/eb90e6fa-6ad5-4f39-bcd6-0f141f7ce0a7)
+
+![Screenshot (1779)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/deef55e8-d12a-47fa-8360-f2ad156479f2)
+
+![Screenshot (1780)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/2eec8b6f-a7cf-4443-9a2a-583d7f829d05)
+
+![Screenshot (1782)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/7a853457-aa2e-4af0-95d7-9fc3e4c03840)
+
+![Screenshot (1783)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/46868413-5e06-4853-9ec7-5bfcecd8a3a9)
+
+![Screenshot (1784)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/0696c2e9-944a-42f7-811b-b71294434506)
+
+![Screenshot (1785)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/762e4bd1-f3fa-44ad-b136-2c9dd350f585)
+
+![Screenshot (1786)](https://github.com/shikhu51197/UsedCarbuyAssign/assets/107506646/92b00067-4a90-4ced-b659-ddbfab1f29a3)
+
 ---
 
 <h1 align="center">✨Thank You✨</h1>
