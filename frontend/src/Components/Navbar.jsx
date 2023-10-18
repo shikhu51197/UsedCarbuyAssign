@@ -13,6 +13,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SignoutFun } from "../Redux/authReducer/action";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { FaIconName } from 'react-icons/fa';
+
 const Navbar = () => {
   const { isAuth } = useSelector ((store) => store.authReducer);
   const { colorMode, toggleColorMode } = useColorMode();

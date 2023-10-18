@@ -1,10 +1,11 @@
 import React from 'react';
 import { Box, Center, Text, Link, IconButton } from '@chakra-ui/react';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+ import { FaIconName } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <Box bg="blank" p={4} mt={8} >
+    <Box bg="blank" p={4} mt={8} border="2px solid red">
       <Center>
         <IconButton
           as={Link}
