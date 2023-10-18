@@ -1,5 +1,9 @@
-> 💻 PROJECT NAME ✨ => 💻SkillTank Assignment🧑‍💻 :-
+> 💻 PROJECT NAME ✨ => 💻UsedCars /Lets Buy your
+Second-Hand Cars 🧑‍💻 :-
 <br>
+
+---
+
 
 ![anime](https://github.com/shikhu51197/skillbackend/assets/107506646/fe3f5ea7-70ca-4ece-9cc0-8972b96c6a03)
 
@@ -62,7 +66,8 @@
 ---
 ✨Project Overview:
 
-This web application serves as an appointment booking platform designed as part of an assignment for SkillTech's hiring process. The application streamlines the process of connecting users with mentors for guidance and assistance.
+UsedCars is a marketplace for second-hand cars. Dealers list their inventory of second-hand cars on buycars.com. Buyers can look at the stock and buy the vehicle from buycars.com.
+This Application lets you register and Login and post, list, update, and delete secondhand cars.
 
 ---✨Getting Started:
 
