@@ -1,7 +1,7 @@
 import axios from "axios"
 import { SIGNIN_FAILED, SIGNIN_REQUEST, SIGNIN_SUCCESS, SIGNOUT_REQUEST, SIGNOUT_SUCCESS, SIGNUP_FAILED, SIGNUP_REQUEST, SIGNUP_SUCCESS } from "./actionTypes"
 
-let baseUrl = "https://used-carbuy-assign.vercel.app/"
+let baseUrl = "https://carback-xs8y.onrender.com"
 
 
 

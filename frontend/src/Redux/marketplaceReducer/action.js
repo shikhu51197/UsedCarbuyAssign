@@ -2,7 +2,7 @@ import axios from "axios"
 import { API_DELETE_MY_SUCCESS, API_EDIT_MY_SUCCESS, API_FAILED, API_GET_MY_SUCCESS, API_GET_SUCCESS, API_POST_SUCCESS, API_REQUEST } from "./actionTypes"
 
 
-let baseUrl = "https://used-carbuy-assign.vercel.app/"
+let baseUrl = "https://carback-xs8y.onrender.com"
 
 export const addDealFun = (formData) => (dispatch) => {
 

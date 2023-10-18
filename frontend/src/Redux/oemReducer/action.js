@@ -1,7 +1,7 @@
 import axios from "axios"
 import { OEM_FAILED, OEM_GET_SUCCESS, OEM_REQUEST } from "./actionTypes"
 
-let baseUrl = "https://used-carbuy-assign.vercel.app/"
+let baseUrl = "https://carback-xs8y.onrender.com"
 
 
 export const getOemFun = () => (dispatch) => {
